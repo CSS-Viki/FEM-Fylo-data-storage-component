@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <script src="./scripts/app.js" defer></script>
+    <link rel="stylesheet" href="./sass/style.css" />
+    <title>Frontend Mentor | Fylo data storage component</title>
+  </head>
+  <body>
+    <div class="fylo-container">
+      <div class="primary-container">
+        <div class="logo">
+          <img src="./images/logo.svg" alt="fylo logo" />
+        </div>
+        <div class="storage-systems">
+          <img src="./images/icon-document.svg" alt="" /><img
+            src="./images/icon-folder.svg"
+            alt=""
+          />
+          <img src="./images/icon-upload.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="secondary-container">
+        <p class="storage-container">
+          You’ve used <strong class="storage">815 GB</strong> of your storage
+        </p>
+
+        <div class="slider-container">
+          <input type="range" id="slider" min="0" max="1000" />
+          <div class="min-to-max-gb">
+            <strong><sdan>0</sdan> GB</strong>
+            <strong><span>1000</span> GB</strong>
+          </div>
+        </div>
+
+        <div class="available-storage">
+          <p><span>185</span> GB LEFT</p>
+        </div>
+        <div class="triangle">
+          <img src="./images/triangle-32.png" alt="triangle" />
+        </div>
+      </div>
+    </div>
+
+    <!-- ATTRIBUTION -->
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://twitter.com/vykiddeh_">Viki Wainaina</a>.
+    </footer>
+  </body>
+</html>

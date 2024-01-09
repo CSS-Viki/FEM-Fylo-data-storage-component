@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+$font-default: "Raleway", sans-serif;
+$Gradient: hsl(6, 100%, 80%), hsl(335, 100%, 65%);
+
+$Pale-Blue: hsl(243, 100%, 93%);
+$Grayish-Blue: hsl(229, 7%, 55%);
+$Dark-Blue: hsl(228, 56%, 26%);
+$Very-Dark-Blue: hsl(229, 57%, 11%);
+
+$Font-size: 0.875rem;
+$transition: all 0.4s ease;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  background-color: $Very-Dark-Blue;
+}
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+body,
+input,
+textarea,
+button {
+  font-family: $font-default;
+}
+.flex-items {
+  display: flex;
+  flex-direction: column;
+}
+@mixin container-styles {
+  max-width: 500px;
+  border-radius: 12px;
+  background-color: $Dark-Blue;
+}
+@mixin images-bg {
+  background: $Very-Dark-Blue;
+  padding: 0.8em;
+  border-radius: 8px;
+}
+@mixin slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  border: 0;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #fff;
+}
