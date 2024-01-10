@@ -26,11 +26,12 @@ body {
       display: flex;
       gap: 20px;
 
-      img {
+      .container-img {
         @include images-bg();
-        // width: 40px;
-        // height: 40px;
-        cursor: pointer;
+        transition: $transition;
+      }
+      .container-img:hover {
+        opacity: 0.8;
       }
     }
   }
@@ -133,7 +134,6 @@ body {
 
 @media (min-width: 600px) {
   body {
-    min-height: 700px;
     background: url(../images/bg-desktop.png);
     background-repeat: no-repeat;
     background-position: bottom;

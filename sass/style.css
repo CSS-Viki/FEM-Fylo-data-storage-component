@@ -60,11 +60,19 @@ body {
   display: flex;
   gap: 20px;
 }
-.fylo-container .primary-container .storage-systems img {
+.fylo-container .primary-container .storage-systems .container-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: hsl(229, 57%, 11%);
-  padding: 0.8em;
+  width: 44px;
+  height: 44px;
   border-radius: 8px;
   cursor: pointer;
+  transition: all 0.4s ease;
+}
+.fylo-container .primary-container .storage-systems .container-img:hover {
+  opacity: 0.8;
 }
 .fylo-container .secondary-container {
   position: relative;
