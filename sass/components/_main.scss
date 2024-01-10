@@ -63,7 +63,7 @@ body {
         outline: none;
       }
 
-      input[type="range"]::-moz-range-progress {
+      input[type="range"]::-moz-range-progress, ::-webkit-slider-runnable-track {
         @include slider-progress-styles();
       }
 
