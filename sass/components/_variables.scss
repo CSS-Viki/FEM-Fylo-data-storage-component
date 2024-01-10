@@ -49,15 +49,22 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+
   background: $Very-Dark-Blue;
   width: 44px;
   height: 44px;
   border-radius: 8px;
   cursor: pointer;
 }
+
+@mixin slider-progress-styles {
+  height: 1.2rem;
+  border-radius: 20px;
+  background: linear-gradient(to right, $Gradient);
+  cursor: grabbing;
+}
+
 @mixin slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
   width: 10px;
   height: 10px;
   border: 0;

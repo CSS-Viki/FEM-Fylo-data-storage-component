@@ -51,7 +51,6 @@ body {
     .slider-container {
       @extend .flex-items;
       gap: 10px;
-
       width: 100%;
 
       #slider {
@@ -65,18 +64,10 @@ body {
       }
 
       input[type="range"]::-moz-range-progress {
-        position: relative;
-        height: 1.2rem;
-        border-radius: 20px;
-        padding-inline: 0.5rem;
-        background: linear-gradient(to right, $Gradient);
-        cursor: grabbing;
+        @include slider-progress-styles();
       }
 
-      #slider::-moz-range-thumb {
-        @include slider-thumb();
-      }
-
+      #slider::-moz-range-thumb,
       #slider::-webkit-slider-thumb {
         @include slider-thumb();
       }

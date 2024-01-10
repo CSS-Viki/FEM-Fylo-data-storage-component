@@ -104,27 +104,13 @@ body {
   outline: none;
 }
 .fylo-container .secondary-container .slider-container input[type=range]::-moz-range-progress {
-  position: relative;
   height: 1.2rem;
   border-radius: 20px;
-  padding-inline: 0.5rem;
   background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
   cursor: grabbing;
 }
-.fylo-container .secondary-container .slider-container #slider::-moz-range-thumb {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-       appearance: none;
-  width: 10px;
-  height: 10px;
-  border: 0;
-  cursor: pointer;
-  border-radius: 5px;
-  background-color: #fff;
-}
+.fylo-container .secondary-container .slider-container #slider::-moz-range-thumb,
 .fylo-container .secondary-container .slider-container #slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
   width: 10px;
   height: 10px;
   border: 0;
