@@ -176,7 +176,7 @@ body {
 
 @media (min-width: 600px) {
   body {
-    min-height: 700px;
+    min-height: 100vh;
     background: url(../images/bg-desktop.png);
     background-repeat: no-repeat;
     background-position: bottom;
